@@ -24,6 +24,11 @@ img {
       padding: 30px;
   }
 
+.description {
+      text-align: center;
+      padding: 30px;
+  }
+
 .links {
       text-align: center;
       margin-top: 20px;
