@@ -19,6 +19,11 @@ img {
     max-width: 200px;
   }
 
+.pic-desc {
+      text-align: center;
+      padding: 10px;
+  }
+
 .profile-name {
       text-align: center;
       padding: 30px;
