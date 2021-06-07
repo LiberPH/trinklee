@@ -19,17 +19,14 @@ img {
     max-width: 200px;
   }
 
+.profile-name {
+      text-align: center;
+    font-size: 20px;
+  }
 .pic-desc {
       text-align: center;
       padding: 10px;
   }
-
-.profile-name {
-      text-align: center;
-      padding: 30px;
-    font-size: 20px;
-  }
-
 .description {
       text-align: center;
       padding: 30px;
