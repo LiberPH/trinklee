@@ -1,5 +1,15 @@
 body {
-    background: black;
+    margin: 0;
+    min-height: 100vh;
+    padding-bottom: 40px;
+    background: linear-gradient(180deg,
+        #16091e 0%,
+        #2b1133 26%,
+        #5a1f3a 50%,
+        #9c3b32 70%,
+        #d65f27 87%,
+        #f6a13a 100%);
+    background-attachment: fixed;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -8,7 +18,7 @@ body {
 
 img {
     border-radius: 50%;
-  }
+}
 
 .profile-picture {
     display: block;
@@ -17,38 +27,40 @@ img {
     margin-top: 10%;
     height: auto;
     max-width: 200px;
-  }
+}
 
 .profile-name {
-      text-align: center;
+    text-align: center;
     font-size: 20px;
-  }
+}
+
 .pic-desc {
-      text-align: center;
-      padding: 10px;
-  }
+    text-align: center;
+    padding: 10px;
+}
+
 .description {
-      text-align: center;
-      padding: 30px;
-  }
+    text-align: center;
+    padding: 30px;
+}
 
 .links {
-      text-align: center;
-      margin-top: 20px;
-      padding: 20px;
-      border: 1px solid white;
-      border-width: 2px;
-      width: 290px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 40px;
-  }
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid white;
+    width: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    background: rgba(20, 8, 26, 0.18);
+}
 
 a {
     text-decoration: none;
     color: white;
-    transition: color 1s; 
+    transition: color 1s, background 0.3s;
 }
 
 .bottom-text {
@@ -59,9 +71,6 @@ a {
 }
 
 a:hover {
-    color: #000;
+    color: #16091e;
     background: #fff;
 }
-
-
-
