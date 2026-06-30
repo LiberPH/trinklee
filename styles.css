@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,400;9..144,0,500;9..144,1,400&family=Cormorant:wght@500&family=Hanken+Grotesk:wght@400;500;600&display=swap');
-
 :root {
     --noche: #16091E;
     --umbral: #2B1133;
@@ -7,25 +6,21 @@
     --brasa: #9C3B32;
     --sol: #D65F27;
     --horizonte: #F6A13A;
-
     --tinta-clara: #F4E3C8;
     --tinta-suave: #D8C3A8;
     --cobre: #C77F4A;
     --naranja-titulo: #D98A4A;
     --malva-tierra: #9C7A6B;
 }
-
 body {
     margin: 0;
     min-height: 100vh;
     padding-bottom: 40px;
     background: linear-gradient(180deg,
         var(--noche) 0%,
-        var(--umbral) 26%,
-        var(--vino) 50%,
-        var(--brasa) 70%,
-        var(--sol) 87%,
-        var(--horizonte) 100%);
+        var(--umbral) 32%,
+        var(--vino) 62%,
+        var(--brasa) 100%);
     background-attachment: fixed;
     color: var(--tinta-clara);
     font-family: 'Hanken Grotesk', sans-serif;
@@ -33,15 +28,22 @@ body {
     line-height: 1.65;
     letter-spacing: 0.5px;
 }
-
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 50% 8%, rgba(246, 161, 58, 0.20), transparent 30%),
+        radial-gradient(circle at 50% 92%, rgba(214, 95, 39, 0.16), transparent 34%);
+    z-index: -1;
+}
 main {
     width: 100%;
 }
-
 img {
     border-radius: 50%;
 }
-
 .profile-picture {
     display: block;
     margin-left: auto;
@@ -52,7 +54,6 @@ img {
     border: 2px solid rgba(244, 227, 200, 0.75);
     box-shadow: 0 0 28px rgba(246, 161, 58, 0.22);
 }
-
 .profile-name {
     text-align: center;
     font-family: 'Cormorant', serif;
@@ -63,27 +64,22 @@ img {
     margin: 22px 20px 0;
     letter-spacing: 0.3px;
 }
-
 .pic-desc {
     text-align: center;
     padding: 10px 28px;
     font-size: 13px;
     color: var(--malva-tierra);
 }
-
 .pic-desc p {
     margin: 0;
 }
-
 .pic-desc a {
     color: var(--tinta-suave);
     text-decoration: none;
 }
-
 .pic-desc a:hover {
     color: var(--horizonte);
 }
-
 .description {
     text-align: center;
     padding: 24px 32px 18px;
@@ -94,11 +90,9 @@ img {
     font-size: 15px;
     line-height: 1.65;
 }
-
 .link-section {
     margin-top: 44px;
 }
-
 .section-title {
     text-align: center;
     font-family: 'Fraunces', serif;
@@ -110,7 +104,6 @@ img {
     margin: 0 20px 14px;
     letter-spacing: 0.2px;
 }
-
 .links {
     text-align: center;
     margin-top: 14px;
@@ -133,14 +126,12 @@ img {
     box-shadow: 0 10px 28px rgba(22, 9, 30, 0.18);
     transition: color 0.35s ease, background 0.35s ease, border-color 0.35s ease, transform 0.35s ease;
 }
-
 .links:hover {
     color: var(--noche);
     background: var(--tinta-clara);
     border-color: var(--tinta-clara);
     transform: translateY(-2px);
 }
-
 .bottom-text {
     text-align: center;
     margin-top: 48px;
